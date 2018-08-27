@@ -1,65 +1,76 @@
-# ionic4-snippets-vscode README
+### Ionic 4 code snippets
 
-This is the README for your extension "ionic4-snippets-vscode". After writing up a brief description, we recommend including the following sections.
+Ionic 4 snippets for vscode
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- i4-avatar
+- i4-button-back
+- i4-backdrop
+- i4-backdrop-dynamic
+- i4-badge
+- i4-button
+- i4-button-detailed
+- i4-button-full
+- i4-button-icon-left
+- i4-button-icon-right
+- i4-button-icon-only
+- i4-buttons
+- i4-icon
+- i4-card
+- i4-checkbox
+- i4-chip
+- i4-chip-label
+- i4-chip-icon-left
+- i4-chip-icon-right
+- i4-chip-button
+- i4-fab
+- i4-fab-full
+- i4-fab-button
+- i4-fab-list
+- i4-fab-buttons
+- i4-footer
+- i4-header
+- i4-hide-when-mode
+- i4-hide-when-media-query
+- i4-hide-when-orientation
+- i4-hide-when-platform
+- i4-hide-when-size
+- i4-img
+- i4-infinite-scroll
+- i4-input
+- i4-item
+- i4-item-detail
+- i4-item-icon
+- i4-item-divider
+- i4-item-group
+- i4-item-sliding
+- i4-item-sliding-options
+- i4-item-sliding-option
+- i4-label
+- i4-label-full
+- i4-list
+- i4-list-full
+- i4-list-with-items
+- i4-list-header
+- i4-menu
+- i4-menu-full
+- i4-note
+- i4-radio
+- i4-radio-group
+- i4-range
+- i4-range-icons
+- i4-refresher-full
+- i4-refresher-content
+- i4-reorder-group
+- i4-reorder-item
+- i4-ripple-effect
+- i4-searchbar
+- i4-segment
+- i4-split-pane
+- i4-split-pane-full
+- i4-skeleton-text
+- i4-text
+- i4-textarea
+- i4-title
+- i4-toggle
+- i4-toolbar
+- i4-virtual-scroll

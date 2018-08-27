@@ -39,7 +39,7 @@
     "description": "Badge other options : mode="
   },
   "Button Basic": {
-    "prefix": "i4-button-basic",
+    "prefix": "i4-button",
     "body": [
       "<ion-button ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} href=\"$3\"> $4 </ion-button>"
     ],
@@ -88,19 +88,19 @@
     ],
     "description": "A button with an icon on the right, based on a basic button "
   },
-  "Icon": {
-    "prefix": "i4-icon",
-    "body": [
-      "<ion-icon name=\"${1|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-dropdown,arrow-dropright-circle,arrow-dropup,arrow-round-down,arrow-up,backspace,baseball,basketball,battery-dead,beaker,beer,bicycle,bluetooth,bluetooth,body,book,bookmarks,briefcase,brush,build,bus,cafe,calendar,camera,card,cash,chatboxes,checkbox-outline,checkmark-circle-outline,checkmark-circle,clipboard,close-circle-outline,close,cloud-done,cloud-outline,cloud,cloudy,code-working,cog,color-filter,color-wand,construct,contacts,contrast,create,cube,desktop,document,download,egg,expand,eye,female,film,fitness,flame,flash,flask,folder-open,football,gift,git-commit,git-merge,git-pull-request,globe,hammer,happy,heart,heart-empty,help-buoy,help-circle,home,ice-cream,images,information-circle-outline,information,jet,key,laptop,link,list,lock,log-out,mail-open,mail,man,medal,medkit,menu,mic,moon,move,musical-notes,notifications-off,notifications,nutrition,options,paper-plane,partly-sunny,paw,person-add,phone-landscape,photos,pin,pizza,play-circle,podium,pricetag,print,qr-scanner,radio-button-off,radio,recording,refresh-circle,remove-circle-outline,remove,repeat,restaurant,return-right,rewind,rocket,sad,school,send,share-alt,shirt,skip-backward,snow,square-outline,star-half,star,stopwatch,sunny,switch,tablet-landscape,tennisball,thermometer,thumbs-up,time,today,transgender,trending-down,trophy,umbrella,unlock,volume-high,volume-mute,wallet,warning,water,wine,women,logo-android,logo-angular,logo-apple,logo-bitbucket,logo-bitcoin,logo-buffer,logo-chrome,logo-closed-captioning,logo-codepen,logo-css3,logo-designernews,logo-dribbble,logo-dropbox,logo-euro,logo-facebook,logo-flickr,logo-foursquare,logo-freebsd-devil,logo-game-controller-a,logo-game-controller-b,logo-github,logo-google,logo-googleplus,logo-hackernews,logo-html5,logo-instagram,logo-ionic,logo-ionitron,logo-javascript,logo-linkedin,logo-markdown,logo-model-s,logo-no-smoking,logo-nodejs,logo-npm,logo-octocatlogo-pinterest,logo-playstation,logo-polymer,logo-python,logo-reddit,logo-rss,logo-sass,logo-skype,logo-slack,logo-snapchatlogo-steam,logo-tumblr,logo-tux,logo-twitch,logo-twitter,logo-usd,logo-vimeo,logo-vk,logo-whatsapp,logo-windows,logo-wordpresslogo-xbox,logo-xing,logo-yahoo,logo-yen,logo-youtube|}\" ${2:slot=\"${3|icon-only,start,end|}\"}></ion-icon>"
-    ],
-    "description": "Icon - other options: size= src= ios= md="
-  },
   "Button group": {
     "prefix": "i4-buttons",
     "body": [
       "<ion-buttons slot=\"${1|start,end,primary,secondary|}\"></ion-buttons>"
     ],
     "description": "Button group"
+  },
+  "Icon": {
+    "prefix": "i4-icon",
+    "body": [
+      "<ion-icon name=\"${1|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-dropdown,arrow-dropright-circle,arrow-dropup,arrow-round-down,arrow-up,backspace,baseball,basketball,battery-dead,beaker,beer,bicycle,bluetooth,bluetooth,body,book,bookmarks,briefcase,brush,build,bus,cafe,calendar,camera,card,cash,chatboxes,checkbox-outline,checkmark-circle-outline,checkmark-circle,clipboard,close-circle-outline,close,cloud-done,cloud-outline,cloud,cloudy,code-working,cog,color-filter,color-wand,construct,contacts,contrast,create,cube,desktop,document,download,egg,expand,eye,female,film,fitness,flame,flash,flask,folder-open,football,gift,git-commit,git-merge,git-pull-request,globe,hammer,happy,heart,heart-empty,help-buoy,help-circle,home,ice-cream,images,information-circle-outline,information,jet,key,laptop,link,list,lock,log-out,mail-open,mail,man,medal,medkit,menu,mic,moon,move,musical-notes,notifications-off,notifications,nutrition,options,paper-plane,partly-sunny,paw,person-add,phone-landscape,photos,pin,pizza,play-circle,podium,pricetag,print,qr-scanner,radio-button-off,radio,recording,refresh-circle,remove-circle-outline,remove,repeat,restaurant,return-right,rewind,rocket,sad,school,send,share-alt,shirt,skip-backward,snow,square-outline,star-half,star,stopwatch,sunny,switch,tablet-landscape,tennisball,thermometer,thumbs-up,time,today,transgender,trending-down,trophy,umbrella,unlock,volume-high,volume-mute,wallet,warning,water,wine,women,logo-android,logo-angular,logo-apple,logo-bitbucket,logo-bitcoin,logo-buffer,logo-chrome,logo-closed-captioning,logo-codepen,logo-css3,logo-designernews,logo-dribbble,logo-dropbox,logo-euro,logo-facebook,logo-flickr,logo-foursquare,logo-freebsd-devil,logo-game-controller-a,logo-game-controller-b,logo-github,logo-google,logo-googleplus,logo-hackernews,logo-html5,logo-instagram,logo-ionic,logo-ionitron,logo-javascript,logo-linkedin,logo-markdown,logo-model-s,logo-no-smoking,logo-nodejs,logo-npm,logo-octocatlogo-pinterest,logo-playstation,logo-polymer,logo-python,logo-reddit,logo-rss,logo-sass,logo-skype,logo-slack,logo-snapchatlogo-steam,logo-tumblr,logo-tux,logo-twitch,logo-twitter,logo-usd,logo-vimeo,logo-vk,logo-whatsapp,logo-windows,logo-wordpresslogo-xbox,logo-xing,logo-yahoo,logo-yen,logo-youtube|}\" ${2:slot=\"${3|icon-only,start,end|}\"}></ion-icon>"
+    ],
+    "description": "Icon - other options: size= src= ios= md="
   },
   "Card": {
     "prefix": "i4-card",
