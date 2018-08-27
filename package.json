@@ -1,0 +1,21 @@
+{
+    "name": "ionic4-snippets-vscode",
+    "displayName": "ionic4-snippets-vscode",
+    "description": "ionic 4 code snippets",
+    "version": "0.0.1",
+    "publisher": "Tim",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
