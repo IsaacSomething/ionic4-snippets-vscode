@@ -1,6 +1,6 @@
 ### Ionic 4 code snippets
 
-Ionic 4 snippets for vscode
+Ionic 4 snippets for vscode: prefix `i4-`
 
 - i4-avatar
 - i4-button-back
