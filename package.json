@@ -2,13 +2,13 @@
   "name": "ionic4-snippets-vscode",
   "displayName": "ionic4-snippets-vscode",
   "description": "ionic 4 code snippets",
-  "icon": "https://github.com/IsaacSomething/ionic4-snippets-vscode/ionic-4-snippets.png",
+  "icon": "https://github.com/IsaacSomething/ionic4-snippets-vscode/blob/master/ionic-4-snippets.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/IsaacSomething/ionic4-snippets-vscode.git"
   },
-  "version": "1.0.0",
-  "publisher": "Tim",
+  "version": "0.0.1",
+  "publisher": "4tron",
   "author": "Tim",
   "license": "MIT",
   "engines": {
