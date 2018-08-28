@@ -1,7 +1,7 @@
 # Change Log
-All notable changes to the "ionic4-snippets-vscode" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Fixed tab order of some of the items
+- Fixed array tabbing issue
+- Updated of descriptions
 
 ## [Unreleased]
-- Initial release
+- 1.0.4
