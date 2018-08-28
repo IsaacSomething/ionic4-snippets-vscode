@@ -1,6 +1,21 @@
 ### Ionic 4 code snippets
 
-Ionic 4 snippets for vscode: prefix `i4-`
+prefix `i4-` 
+
+Based off of [ionic 4 component documentation(beta)](https://beta.ionicframework.com/docs/api/select-option)
+
+Some gotchas when working with the snippets
+
+#### Removing attributes 
+Most of the snippets give you the option to remove the whole attribute if you do not want it. For example if you 
+type `i4-button` the first active tab item is `color="primary"`. You can just `backspace` to remove this attribute
+if you just want the default button color. **However** the button `color` attribute has a list of options to choose,
+and so the next tab in the snippet will be a list of those options**,
+You just need to `backspace` out of the array selection and then tab into the next part of the snippet
+##### ** I am not sure how to get around that issue
+
+![snippet](https://github.com/IsaacSomething/ionic4-snippets-vscode/blob/master/snippet.gif)
+
 
 - i4-avatar
 - i4-button-back
@@ -65,6 +80,10 @@ Ionic 4 snippets for vscode: prefix `i4-`
 - i4-ripple-effect
 - i4-searchbar
 - i4-segment
+- i4-segment-button
+- i4-select
+- i4-spinner
+- i4-slides
 - i4-split-pane
 - i4-split-pane-full
 - i4-skeleton-text
