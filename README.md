@@ -12,7 +12,7 @@ type `i4-button` the first active tab item is `color="primary"`. You can just `b
 if you just want the default button color. **However** the button `color` attribute has a list of options to choose,
 and so the next tab in the snippet will be a list of those options**,
 You just need to `backspace` out of the array selection and then tab into the next part of the snippet
-##### ** I am not sure how to get around that issue
+##### ** I am not sure how to get around that issue - this issue is open [here](https://github.com/Microsoft/vscode/issues/57486)
 
 ![snippet](https://github.com/IsaacSomething/ionic4-snippets-vscode/blob/master/snippet.gif)
 
@@ -78,6 +78,9 @@ You just need to `backspace` out of the array selection and then tab into the ne
 - i4-reorder-group
 - i4-reorder-item
 - i4-ripple-effect
+- i4-router
+- i4-route
+- i4-router-outlet
 - i4-searchbar
 - i4-segment
 - i4-segment-button
