@@ -1,3 +1,10 @@
+## Change Log 1.1.2
+
+- Fixed input
+- Updated segment, skeleton text
+- Added skeleton text paragraph
+- Added datetime
+
 ## Change Log 1.1.1
 
 - Added Router, Fixed spinner, Fixed icon

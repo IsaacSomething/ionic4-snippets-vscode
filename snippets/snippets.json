@@ -172,6 +172,23 @@
     ],
     "description": "Chip with an icon"
   },
+  "Date Time": {
+    "prefix": "i4-datetime",
+    "body": [
+      "<ion-datetime placeholder=\"$1\"></ion-datetime>"
+    ],
+    "description": "Fab button"
+  },
+  "Date Time Item": {
+    "prefix": "i4-datetime-item",
+    "body": [
+      "<ion-item>",
+      "\t<ion-label ${1:position=\"${2|stacked,floating|}\"}> $3 </ion-label>",
+      "\t<ion-datetime placeholder=\"$4\"></ion-datetime>",
+      "</ion-item>"
+    ],
+    "description": "Fab button"
+  },
   "Fab": {
     "prefix": "i4-fab",
     "body": [
@@ -305,7 +322,7 @@
   "Input": {
     "prefix": "i4-input",
     "body": [
-      "<ion-input type=\"${1|text,password,email,number,search,tel,url|}\"> $0 </ion-hide-when>"
+      "<ion-input type=\"${1|text,password,email,number,search,tel,url|}\"> $0 </ion-input>"
     ],
     "description": "Input"
   },
@@ -559,16 +576,25 @@
   "Segment": {
     "prefix": "i4-segment",
     "body": [
-      "<ion-segment> $0 </ion-segment>"
+      "<ion-segment ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </ion-segment>"
     ],
     "description": "Segment"
   },
   "Segment Button": {
     "prefix": "i4-segment-button",
     "body": [
-      "<ion-segment-button ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} (ionSelect)=\"segmentButtonClicked($event)\">",
+      "<ion-segment-button (ionSelect)=\"segmentButtonClicked($event)\">",
       "\t$0",
       "</ion-segment-button>"
+    ],
+    "description": "Segment button - other options: checked value="
+  },
+  "Segment Full": {
+    "prefix": "i4-segment-full",
+    "body": [
+      "<ion-segment ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}>",
+      "\t$0",
+      "</ion-segment>"
     ],
     "description": "Segment button - other options: checked value="
   },
@@ -634,7 +660,18 @@
   "Skeleton Text": {
     "prefix": "i4-skeleton-text",
     "body": [
-      "skeleton-text[width=\"$1\"]*$"
+      "<ion-skeleton-text width=\"$1\"></ion-skeleton-text>"
+    ],
+    "description": "Split pane as emmet"
+  },
+  "Skeleton Text Paragraph": {
+    "prefix": "i4-skeleton-text-paragraph",
+    "body": [
+      "<p *ngFor=\"let item of [1,2,3$1]\">",
+      "\t<ion-skeleton-text width=\"100%\"></ion-skeleton-text>",
+      "\t<ion-skeleton-text width=\"100%\"></ion-skeleton-text>",
+      "\t<ion-skeleton-text width=\"90%\"></ion-skeleton-text>",
+      "<p>"
     ],
     "description": "Split pane as emmet"
   },
