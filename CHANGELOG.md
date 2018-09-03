@@ -1,3 +1,7 @@
+## Change Log 1.1.4
+- fixed checkbox, ion-slides
+- Removed spaces from icons
+
 ## Change Log 1.1.3
 - Added show-when, slide,reorder full, chip-button
 - Added icons that were not there
