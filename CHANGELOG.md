@@ -1,3 +1,25 @@
+## Change Log 1.1.5
+- Added menu button
+- Added avatar item (simplified i4-avatar)
+- Added slot to array (start,end) to menu back button
+- Added full detail ion-back-button with options color, icon, and text
+- Simplified i4-badge and added ion badge with item
+- Removed slot from i4-icon
+- Fixed i4-checkbox, removed slot
+- Added checkedbox item
+- Fixed chip button
+- Fixed i4-chip-icon-button
+- Updated i4-fab-full
+- Updated platform array
+- Added i4-img-item-thumbnail item as thumbnail
+- Updated ion item detail icon - added icons
+-  i4-list-with-items now using emmet
+- Updated refresher spinner with array
+- Fixed i4-select
+- Added color to toggle
+- Added toggle item
+- Added color to toolbar
+
 ## Change Log 1.1.4
 - fixed checkbox, ion-slides
 - Removed spaces from icons
