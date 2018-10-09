@@ -6,13 +6,10 @@ Based off of [ionic 4 component documentation(beta)](https://beta.ionicframework
 
 Some gotchas when working with the snippets
 
-#### Removing attributes 
-Most of the snippets give you the option to remove the whole attribute if you do not want it. For example if you 
-type `i4-button` the first active tab item is `color="primary"`. You can just `backspace` to remove this attribute
-if you just want the default button color. **However** the button `color` attribute has a list of options to choose,
-and so the next tab in the snippet will be a list of those options**,
-You just need to `backspace` out of the array selection and then tab into the next part of the snippet
-##### ** I am not sure how to get around that issue - this issue is open [here](https://github.com/Microsoft/vscode/issues/57486)
+#### ~~Removing attributes~~
+~~Most of the snippets give you the option to remove the whole attribute if you do not want it. For example if you. ...~~
+
+This issue has been fixed: https://github.com/Microsoft/vscode/issues/31619
 
 ![snippet](snippet.gif)
 
