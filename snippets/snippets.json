@@ -219,6 +219,13 @@
     ],
     "description": "Chip with an icon"
   },
+  "Content": {
+    "prefix": "i4-content",
+    "body": [
+      "<ion-content ${1:[scrollEvents]=\"true\"} ${2:(ionScrollStart)=\"${3:logScrollStart}()\"} ${4:(ionScroll)=\"${5:logScrolling}($event)\"} ${6:(ionScrollEnd)=\"${7:logScrollEnd}()\"}> </ion-content>"
+    ],
+    "description": "Main content tab with full options"
+  },
   "Date Time": {
     "prefix": "i4-datetime",
     "body": [
@@ -599,7 +606,7 @@
       "<ion-reorder-group>",
       "\t<ion-item>",
       "\t\t<ion-label> Item 1 </ion-label>",
-      "\t\t<ion-reorder slot=\"end\"></ion-reorder>",
+      "\t\t<ion-reorder ${slot=\"end\"></ion-reorder>",
       "\t</ion-item>",
       "",
       "\t<ion-item>",
@@ -839,12 +846,36 @@
     ],
     "description": "Text Item"
   },
-  "Text Area": {
+  "Textarea": {
     "prefix": "i4-textarea",
     "body": [
       "<ion-textarea ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </ion-textarea>"
     ],
     "description": "Text Area"
+  },
+  "Textarea Clear On Edit": {
+    "prefix": "i4-textarea-clear-on-edit",
+    "body": [
+      "<ion-textarea clearOnEdit=\"true\"> $0 </ion-textarea>"
+    ],
+    "description": "Text Area with clear on edit"
+  },
+  "Textarea Auto Grow": {
+    "prefix": "i4-textarea-autogrow",
+    "body": [
+      "<ion-textarea autoGrow=\"true\"> $0 </ion-textarea>"
+    ],
+    "description": "Text Area with clear on edit"
+  },
+  "Textarea Item": {
+    "prefix": "i4-textarea-item",
+    "body": [
+      "<ion-item>",
+      "\t<ion-label> $0 </ion-label>",
+      "\t<ion-textarea ${1:placeholder=\"${2:placeholder here...}\"} ${3:autoGrow=\"true\"} ${4:clearOnEdit=\"true\"}> $0 </ion-textarea>",
+      "</ion-item>"
+    ],
+    "description": "Text Area with clear on edit"
   },
   "Thumbnail": {
     "prefix": "i4-thumbnail",
@@ -871,8 +902,8 @@
     "prefix": "i4-toggle-item",
     "body": [
       "<ion-item>",
-      "<ion-label> $0 </ion-label>",
-      "<ion-toggle color=\"${1|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"></ion-toggle>",
+      "\t<ion-label> $0 </ion-label>",
+      "\t<ion-toggle color=\"${1|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"></ion-toggle>",
       "</ion-item>"
     ],
     "description": "toggle"

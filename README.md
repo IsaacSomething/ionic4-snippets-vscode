@@ -36,6 +36,7 @@ This issue has been fixed: https://github.com/Microsoft/vscode/issues/31619
 | i4-chip-icon-right | `ion-chip` with a nested `ion-chip-label` & `ion-icon` on right | *color*; *icon*
 | i4-chip-icon-button | `ion-chip` with a nested `ion-chip-label` & `ion-icon` on right | *color*; *icon*
 | i4-chip-button | `ion-chip-button` | *color*, *fill*
+| i4-content | `ion-coontent` | *scrollEvents*, *(ionScrollStart)*, *(ionScroll)*, *(ionScrollEnd)*
 | i4-datetime | `ion-datetime` | *placeholder*;
 | i4-datetime-item | `ion-datetime` nested in an `ion-item` with an `ion-label` | *position*; *placeholder*;
 | i4-fab | `ion-fab` | *none*;
@@ -110,6 +111,9 @@ This issue has been fixed: https://github.com/Microsoft/vscode/issues/31619
 | i4-tabs-full | `ion-tabs` with 3 `ion-tab`'s | *color*; *icon*
 | i4-text | `ion-text` | *color*;
 | i4-textarea | `ion-textarea` | *color*;
+| i4-textarea-clear-on-edit | `ion-textarea` | *clear on edit*;
+| i4-textarea-autogrow | `ion-textarea-autogrow` | *autogrow*;
+| i4-textarea-item | `i4-textarea-item` | *item wrapper*;
 | i4-thumbnail | `ion-thumbnail` | *slot*;
 | i4-title | `ion-title` | *none*;
 | i4-toggle | `ion-toggle` | *none*;

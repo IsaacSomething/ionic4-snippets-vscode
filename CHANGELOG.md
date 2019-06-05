@@ -1,3 +1,9 @@
+## Change Log 1.1.6
+- Added clear on edit to textarea `i4-textarea-clear-on-edit`
+- Added autogrow to textarea `i4-textarea-clear-on-edit`
+- Added textarea with item wrapper `i4-textarea-item`
+- Added ion-content with full options - 'scrollEvents',(ionScrollStart),(ionScroll),(ionScrollEnd)
+
 ## Change Log 1.1.5
 - Added menu button
 - Added avatar item (simplified i4-avatar)
