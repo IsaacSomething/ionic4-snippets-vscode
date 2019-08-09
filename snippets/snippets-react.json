@@ -1,0 +1,919 @@
+{
+  "Avatar": {
+    "prefix": "i4-avatar",
+    "body": [
+      "<IonAvatar>",
+      "\t<img src=\"$1\"> $0",
+      "</IonAvatar>"
+    ],
+    "description": "Avatar"
+  },
+  "Avatar Item": {
+    "prefix": "i4-avatar-item",
+    "body": [
+      "<IonItem>",
+      "\t<IonAvatar ${1:slot=\"${2|start,end|}\"}>",
+      "\t\t<img src=\"$3\">",
+      "\t</IonAvatar>",
+      "\t<IonLabel> $0 </IonLabel>",
+      "</IonItem>"
+    ],
+    "description": "Avatar item"
+  },
+  "Avatar Chip": {
+    "prefix": "i4-avatar-chip",
+    "body": [
+      "<IonChip>",
+      "\t<IonAvatar ${1:slot=\"${2|start,end|}\"}>",
+      "\t\t<img src=\"$3\">",
+      "\t</IonAvatar>",
+      "\t<IonLabel> $0 </IonLabel>",
+      "</IonChip>"
+    ],
+    "description": "Avatar chip"
+  },
+  "Back Button": {
+    "prefix": "i4-button-back",
+    "body": [
+      "<IonBackButton ${1:defaultHref=\"$2\"} ${3:text=\"$4\"} ${5:color=\"$6\"} ${7:icon=\"$8|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman\"}></IonBackButton>"
+    ],
+    "description": "Back button"
+  },
+  "Back Button Nested": {
+    "prefix": "i4-button-back-nested",
+    "body": [
+      "<IonButtons slot=\"${1|start,end|}\">",
+      "\t<IonBackButton defaultHref=\"$2\"></IonBackButton>",
+      "</IonButtons>"
+    ],
+    "description": "Back button - other options : text= icon= color= mode="
+  },
+  "Back Button Details": {
+    "prefix": "i4-button-back-details",
+    "body": [
+      "<IonButtons slot=\"${1|start,end|}\">",
+      "\t<IonBackButton ${2:defaultHref=\"$3\"} ${4:text=\"$5\"} ${6:color=\"$7\"} ${8:icon=\"${9|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\"}></IonBackButton>",
+      "</IonButtons>"
+    ],
+    "description": "Back button with text,icon, color options"
+  },
+  "Backdrop": {
+    "prefix": "i4-backdrop",
+    "body": [
+      "<IonBackdrop ${1:tappable={false}} ${3:visible={false}} ${5:stopPropagation={false}}></IonBackdrop>"
+    ],
+    "description": "Standard Backdrop"
+  },
+  "Backdrop Dynamic": {
+    "prefix": "i4-backdrop-dynamic",
+    "body": [
+      "<IonBackdrop ${1:[tappable]=\"$2\"} ${3:[visible]=\"$4\"} ${5:[stopPropagation]=\"$6\"}></IonBackdrop>"
+    ],
+    "description": "Dynamic Backdrop"
+  },
+  "Badge": {
+    "prefix": "i4-badge",
+    "body": [
+      "<IonBadge ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonBadge>"
+    ],
+    "description": "Badge other options : mode="
+  },
+  "Badge Item": {
+    "prefix": "i4-badge-item",
+    "body": [
+      "<IonItem>",
+      "\t<IonBadge ${1:slot=\"${2|start,end|}\"} ${3:color=\"${4|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonBadge>",
+      "</IonItem>"
+    ],
+    "description": "Badge other options : mode="
+  },
+  "Button Basic": {
+    "prefix": "i4-button",
+    "body": [
+      "<IonButton ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:href=\"$4\"}> $0 </IonButton>"
+    ],
+    "description": "A simple button with a href"
+  },
+  "Button Full": {
+    "prefix": "i4-button-detailed",
+    "body": [
+      "<IonButton ${1:href=\"$2\"} ${3:routerDirection=\"$4\"} ${5:color=\"${6|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${7:size=\"${8|large,small|}\"}> $9 </IonButton>"
+    ],
+    "description": "A button with common items added"
+  },
+  "Button Full options": {
+    "prefix": "i4-button-full",
+    "body": [
+      "<IonButton ${1:href=\"$2\"} ${3:routerDirection=\"$4\"} ${5:color=\"${6|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${7:fill=\"${8|clear,outline,solid|}\"} ${9:size=\"${10|small,large|}\"} ${11:type=\"${12|submit,reset|}\"} ${13:expand=\"${14|block,full|}\"} ${15:round} ${16:strong}> $0 </IonButton>"
+    ],
+    "description": "Button with a fill list of options,other options: mode= "
+  },
+  "Button Icon Left": {
+    "prefix": "i4-button-icon-left",
+    "body": [
+      "<IonButton ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:href=\"$4\"}>",
+      "\t<IonIcon name=\"${5|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\" slot=\"start\"></IonIcon>",
+      "\t$0",
+      "</IonButton>"
+    ],
+    "description": "A button with an icon on the left,based on a basic button "
+  },
+  "Button Icon Right": {
+    "prefix": "i4-button-icon-right",
+    "body": [
+      "<IonButton ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:href=\"$4\"}>",
+      "\t$0",
+      "\t<IonIcon name=\"${5|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\" slot=\"end\"></IonIcon>",
+      "</IonButton>"
+    ],
+    "description": "A button with an icon on the right,based on a basic button "
+  },
+  "Button Icon Only": {
+    "prefix": "i4-button-icon-only",
+    "body": [
+      "<IonButton ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:href=\"$4\"}>",
+      "\t<IonIcon name=\"${5|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\" slot=\"icon-only\"></IonIcon>",
+      "</IonButton>"
+    ],
+    "description": "A button with an icon on the right,based on a basic button "
+  },
+  "Button group": {
+    "prefix": "i4-buttons",
+    "body": [
+      "<IonButtons slot=\"${1|start,end,primary,secondary|}\"> $0 </IonButtons>"
+    ],
+    "description": "Button group"
+  },
+  "Icon": {
+    "prefix": "i4-icon",
+    "body": [
+      "<IonIcon name=\"${1|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\"></IonIcon>"
+    ],
+    "description": "Icon - other options: size= src= ios= md="
+  },
+  "Card": {
+    "prefix": "i4-card",
+    "body": [
+      "<IonCard ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}>",
+      "\t<IonCard-header>",
+      "\t\t${3:<IonCard-subtitle>$4</IonCard-subtitle>}",
+      "\t\t${5:<IonCard-title>$6</IonCard-title>}",
+      "\t</IonCard-header>",
+      "\t<IonCard-content>",
+      "\t\t$0",
+      "\t</IonCard-content>",
+      "</IonCard>"
+    ],
+    "description": "Card other options: mode="
+  },
+  "Checkbox": {
+    "prefix": "i4-checkbox",
+    "body": [
+      "<IonCheckbox ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}></IonCheckbox>"
+    ],
+    "description": "Checkbox other options: checked= diabled= mode= name= value="
+  },
+  "Checkbox Item": {
+    "prefix": "i4-checkbox-item",
+    "body": [
+      "<IonItem>",
+      "\t<IonCheckbox ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} slot=\"${3|start,end|}\"></IonCheckbox>",
+      " <IonLabel> $4 </IonLabel>",
+      "</IonItem>"
+    ],
+    "description": "Checkbox other options: checked= diabled= mode= name= value="
+  },
+  "Chip": {
+    "prefix": "i4-chip",
+    "body": [
+      "<IonChip ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonChip>"
+    ],
+    "description": "Chip with a label"
+  },
+  "Chip Label": {
+    "prefix": "i4-chip-label",
+    "body": [
+      "<IonChip ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}>",
+      "\t<IonLabel ${3:color=\"${4|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonLabel>",
+      "</IonChip>"
+    ],
+    "description": "Chip with a label"
+  },
+  "Chip Icon left": {
+    "prefix": "i4-chip-icon-left",
+    "body": [
+      "<IonChip ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}>",
+      "\t<IonIcon name=\"${3|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\"></IonIcon>",
+      "\t<IonLabel ${4:color=\"${3|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonLabel>",
+      "</IonChip>"
+    ],
+    "description": "Chip with an icon positioned left"
+  },
+  "Chip Icon right": {
+    "prefix": "i4-chip-icon-right",
+    "body": [
+      "<IonChip ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}>",
+      "\t<IonLabel ${3:color=\"${4|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonLabel>",
+      "\t<IonIcon name=\"${5|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\"></IonIcon>",
+      "</IonChip>"
+    ],
+    "description": "Chip with an icon positioned right"
+  },
+  "Chip Button": {
+    "prefix": "i4-chipButton",
+    "body": [
+      "<IonChipButton ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:fill=\"$4\"}> $0 </IonChipButton>"
+    ],
+    "description": "Fab button"
+  },
+  "Chip Icon Button": {
+    "prefix": "i4-chip-icon-button",
+    "body": [
+      "<IonChip ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}>",
+      "\t<IonLabel> $0 </IonLabel>",
+      "\t<IonChipButton ${3:fill=\"${4|clear,outline,solid|}\"} ${5:color=\"${6|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}>",
+      "\t\t<IonIcon name=\"${7|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\"></IonIcon>",
+      "\t</IonChipButton>",
+      "</IonChip>"
+    ],
+    "description": "Chip with an icon"
+  },
+  "Content": {
+    "prefix": "i4-content",
+    "body": [
+      "<IonContent ${1:scrollEvents={true}} ${2:onIonScrollStart={() => { $3 }}} ${4:(onIonScroll)={() => { $5 }}} ${6:onIonScrollEnd={() => { $6 }}}> $0 </IonContent>"
+    ],
+    "description": "Main content tab with full options"
+  },
+  "Date Time": {
+    "prefix": "i4-datetime",
+    "body": [
+      "<IonDatetime placeholder=\"$1\">$0</IonDatetime>"
+    ],
+    "description": "Date time input"
+  },
+  "Date Time Item": {
+    "prefix": "i4-datetime-item",
+    "body": [
+      "<IonItem>",
+      "\t<IonLabel ${1:position=\"${2|stacked,floating,fixed|}\"}> $0 </IonLabel>",
+      "\t<IonDatetime ${4:placeholder=\"$5\"}></IonDatetime>",
+      "</IonItem>"
+    ],
+    "description": "Fab button"
+  },
+  "Fab": {
+    "prefix": "i4-fab",
+    "body": [
+      "<IonFab>",
+      "\t$0",
+      "</IonFab>"
+    ],
+    "description": "Fab button"
+  },
+  "Fab all options": {
+    "prefix": "i4-fab-full",
+    "body": [
+      "<IonFab ${1:vertical=\"${2|bottom,top|}\"} ${3:horizontal=\"${4|end,start,center|}\"} ${5:edge=\"${6|end,start,center|}\"} ${7:slot=\"${8|start,end|}\"} ${9:edge}>",
+      "\t$0",
+      "</IonFab>"
+    ],
+    "description": "Fab"
+  },
+  "Fab Buttons": {
+    "prefix": "i4-fab-button",
+    "body": [
+      "<IonFabButton ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonFabButton>"
+    ],
+    "description": "Fab button other options: mini"
+  },
+  "Fab List": {
+    "prefix": "i4-fab-list",
+    "body": [
+      "<IonFabList ${1:side=\"top\"}>",
+      "\t$0",
+      "</IonFabList>"
+    ],
+    "description": "Fab list other options: activated"
+  },
+  "Fab List With buttons": {
+    "prefix": "i4-fab-buttons",
+    "body": [
+      "<IonFabList ${1:side=\"top\"}>",
+      "\t<IonFabButton> $2 </IonFabButton>",
+      "\t<IonFabButton> $3 </IonFabButton>",
+      "\t<IonFabButton> $4 </IonFabButton>",
+      "</IonFabList>"
+    ],
+    "description": "Fab list other options: activated"
+  },
+  "Footer": {
+    "prefix": "i4-footer",
+    "body": [
+      "<IonFooter>",
+      "\t$0",
+      "</IonFooter>"
+    ],
+    "description": "Footer other options: mode= translucent"
+  },
+  "Header": {
+    "prefix": "i4-header",
+    "body": [
+      "<IonHeader>",
+      "\t$0",
+      "</IonHeader>"
+    ],
+    "description": "Header other options: mode= translucent"
+  },
+  "Hide When Mode": {
+    "prefix": "i4-hide-when-mode",
+    "body": [
+      "<IonHideWhen mode=\"${1|ios,md|}\"> $0 </IonHideWhen>"
+    ],
+    "description": "Header other options: mode= translucent"
+  },
+  "Hide When Media Query": {
+    "prefix": "i4-hide-when-media-query",
+    "body": [
+      "<IonHideWhen mediaQuery=\"$1\"> $0 </IonHideWhen>"
+    ],
+    "description": "Hide based on media query"
+  },
+  "Hide When Orientation": {
+    "prefix": "i4-hide-when-orientation",
+    "body": [
+      "<IonHideWhen orientation=\"${1|portrait,landscape|}\"> $0 </IonHideWhen>"
+    ],
+    "description": "Hide based onorientation"
+  },
+  "Hide When platform": {
+    "prefix": "i4-hide-when-platform",
+    "body": [
+      "<IonHideWhen platform=\"${1|android,cordova,ios,ipad,iphone,phablet,tablet,electron,pwa,mobile,desktop,hybrid|}\"> $0 </IonHideWhen>"
+    ],
+    "description": "Hide based on platform"
+  },
+  "Hide When Size": {
+    "prefix": "i4-hide-when-size",
+    "body": [
+      "<IonHideWhen size=\"${1|xs,sm,md,lg,xl|}\"> $0 </IonHideWhen>"
+    ],
+    "description": "Hide based on size"
+  },
+  "Image": {
+    "prefix": "i4-img",
+    "body": [
+      "<IonImg src=\"$1\" alt=\"$2\"></IonImg>"
+    ],
+    "description": "Image"
+  },
+  "Image Dynamic": {
+    "prefix": "i4-img-dynamic",
+    "body": [
+      "<IonImg src={$1} alt=\"$2\"></IonImg>"
+    ],
+    "description": "Image"
+  },
+  "Image Item Thumbnail": {
+    "prefix": "i4-img-item-thumbnail",
+    "body": [
+      "<IonItem>",
+      "\t<IonThumbnail ${1:slot=\"${2|start,end|}\"}>",
+      "\t\ti4-${3|img,img-dynamic|}$4",
+      "\t</IonThumbnail>",
+      "\t<IonLabel> $0 </IonLabel>",
+      "</IonItem>"
+    ],
+    "description": "Image item with thumbnail"
+  },
+  "Input": {
+    "prefix": "i4-input",
+    "body": [
+      "<IonInput type=\"${1|text,password,email,number,search,tel,url|}\"> $0 </IonInput>"
+    ],
+    "description": "Input"
+  },
+  "Item": {
+    "prefix": "i4-item",
+    "body": [
+      "<IonItem ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonItem>"
+    ],
+    "description": "Item"
+  },
+  "Item Detail": {
+    "prefix": "i4-item-detail",
+    "body": [
+      "<IonItem ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} detail> $0 </IonItem>"
+    ],
+    "description": "Item with details arrow"
+  },
+  "Item Icon": {
+    "prefix": "i4-item-detail-icon",
+    "body": [
+      "<IonItem ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} detailIcon=\"{3:|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\"> $0 </IonItem>"
+    ],
+    "description": "Item with detail icon"
+  },
+  "Item Divider": {
+    "prefix": "i4-item-divider",
+    "body": [
+      "<IonItemDivider> $0 </IonItemDivider>"
+    ],
+    "description": "Item divider"
+  },
+  "Item Group": {
+    "prefix": "i4-item-group",
+    "body": [
+      "<IonItemGroup> $0 </IonItemGroup>"
+    ],
+    "description": "Item group"
+  },
+  "Item Sliding": {
+    "prefix": "i4-item-sliding",
+    "body": [
+      "<IonItemSliding>",
+      "\t$0",
+      "</IonItemSliding>"
+    ],
+    "description": "Item sliding"
+  },
+  "Item Sliding Options": {
+    "prefix": "i4-item-sliding-options",
+    "body": [
+      "<IonItemOptions side=\"${1|start,end|}\">",
+      "\t$0",
+      "</IonItemOptions>"
+    ],
+    "description": "Item sliding options"
+  },
+  "Item Sliding Option": {
+    "prefix": "i4-item-sliding-option",
+    "body": [
+      "<IonItemOption ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} href=\"$3\"> $0 </IonItemOption>"
+    ],
+    "description": "Item sliding option"
+  },
+  "Label": {
+    "prefix": "i4-label",
+    "body": [
+      "<IonLabel> $0 </IonLabel>"
+    ],
+    "description": "Label"
+  },
+  "Label Full Options": {
+    "prefix": "i4-label-full",
+    "body": [
+      "<IonLabel ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:position=\"${4|fixed,floating,stacked|}\"}> $0 </IonLabel>"
+    ],
+    "description": "Label with all options"
+  },
+  "List": {
+    "prefix": "i4-list",
+    "body": [
+      "<IonList> $0 </IonList>"
+    ],
+    "description": "list"
+  },
+  "List Full Options": {
+    "prefix": "i4-list-full",
+    "body": [
+      "<IonList ${1:lines={true}} ${2:inset={true}}> $0 </IonList>"
+    ],
+    "description": "list full options"
+  },
+  "List With Items": {
+    "prefix": "i4-list-with-items",
+    "body": [
+      "<IonList>",
+      "\tIonItem*$1>IonLabel$0",
+      "</IonList>"
+    ],
+    "description": "list with items using emmet"
+  },
+  "List Header": {
+    "prefix": "i4-list-header",
+    "body": [
+      "<IonListHeader ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonListHeader>"
+    ],
+    "description": "List header other options: mode="
+  },
+  "Menu": {
+    "prefix": "i4-menu",
+    "body": [
+      "<IonMenu> $0 </IonMenu>"
+    ],
+    "description": "Menu"
+  },
+  "Menu Button": {
+    "prefix": "i4-menu-button",
+    "body": [
+      "<IonMenuButton> $0 </IonMenuButton>"
+    ],
+    "description": "Menu Button"
+  },
+  "Menu Full": {
+    "prefix": "i4-menu-full",
+    "body": [
+      "<IonMenu ${1:side=\"end\"} ${2:type=\"${3|overlay,reveal,push|}\"} ${4:swipeEnabled={false}}> $0 </IonMenu>"
+    ],
+    "description": "Menu with full options"
+  },
+  "Note": {
+    "prefix": "i4-note",
+    "body": [
+      "<IonNote ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $3 </IonNote>"
+    ],
+    "description": "Text note"
+  },
+  "Radio": {
+    "prefix": "i4-radio",
+    "body": [
+      "<IonRadio ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:slot=\"${4|start,end|}\"}></IonRadio>"
+    ],
+    "description": "Radio"
+  },
+  "Radio Group": {
+    "prefix": "i4-radio-group",
+    "body": [
+      "<IonRadioGroup> $0 </IonRadioGroup>"
+    ],
+    "description": "Radio group"
+  },
+  "Range": {
+    "prefix": "i4-range",
+    "body": [
+      "<IonRange ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:min=\"$4\"} ${5:max=\"$6\"} ${7:pin={true}}></IonRange>"
+    ],
+    "description": "Range other options: dualKnobs snaps step"
+  },
+  "Range Labels": {
+    "prefix": "i4-range-labels",
+    "body": [
+      "<IonRange ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:min=\"$4\"} ${5:max=\"$6\"} ${7:pin={true}}>",
+      "\t<IonLabel slot=\"start\"> $8 </IonLabel>",
+      "\t<IonLabel slot=\"end\"> $9 </IonLabel>",
+      "</IonRange>"
+    ],
+    "description": "Range with labels"
+  },
+  "Range Icons": {
+    "prefix": "i4-range-icons",
+    "body": [
+      "<IonRange ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} ${3:min=\"$4\"} ${5:max=\"$6\"} ${7:pin={true}}>",
+      "\t<IonIcon slot=\"start\" name=\"${8|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\"></IonIcon>",
+      "\t<IonIcon slot=\"end\" name=\"${9|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\"></IonIcon>",
+      "</IonRange>"
+    ],
+    "description": "Range with icons"
+  },
+  "Refresher": {
+    "prefix": "i4-refresher",
+    "body": [
+      "<IonRefresher slot=\"fixed\" onIonRefresh={}></IonRefresher>"
+    ],
+    "description": "Refresher other options: pullMax= pullMin= snapbackDuration= closeDuration="
+  },
+  "Refresher All Options": {
+    "prefix": "i4-refresher-full",
+    "body": [
+      "<IonRefresher slot=\"fixed\" ${1:pullMax=\"$2\"} ${3:pullMin=\"$4\"} ${5:snapbackDuration=\"$6\"} ${7:closeDuration=\"$8\"} onIonRefresh={$9}></IonRefresher>"
+    ],
+    "description": "Refresher all options"
+  },
+  "Refresher Content": {
+    "prefix": "i4-refresher-content",
+    "body": [
+      "<IonRefresherContent pullingIcon=\"arrow-dropdown\" pullingText=\"$1\" refreshingSpinner=\"{$2|lines,lines-small,dots,bubbles,circles,crescent|}\" refreshingText=\"$3\"> $0 </IonRefresherContent>"
+    ],
+    "description": "Refresher content"
+  },
+  "Reorder": {
+    "prefix": "i4-reorder",
+    "body": [
+      "<IonReorder slot=\"${1|start,end|}\"> $0 </IonReorder>"
+    ],
+    "description": "Reorder item"
+  },
+  "Reorder Group": {
+    "prefix": "i4-reorder-group",
+    "body": [
+      "<IonReorderGroup> $0 </IonReorderGroup>"
+    ],
+    "description": "Reorder group"
+  },
+  "Reorder Full": {
+    "prefix": "i4-reorder-full",
+    "body": [
+      "<IonReorderGroup>",
+      "\t<IonItem>",
+      "\t\t<IonLabel> Item 1 </IonLabel>",
+      "\t\t<IonReorder ${slot=\"end\"></IonReorder>",
+      "\t</IonItem>",
+      "",
+      "\t<IonItem>",
+      "\t\t<IonLabel> Item 1 </IonLabel>",
+      "\t\t<IonReorder slot=\"end\"></IonReorder>",
+      "\t</IonItem>",
+      "</IonReorderGroup>"
+    ],
+    "description": "Reorder group with 2 reorder items"
+  },
+  "Ripple Effect": {
+    "prefix": "i4-ripple-effect",
+    "body": [
+      "<IonRippleEffect></IonRippleEffect>"
+    ],
+    "description": "Ripple effect"
+  },
+  "Router": {
+    "prefix": "i4-router",
+    "body": [
+      "<IonRouter> $0 </IonRouter>"
+    ],
+    "description": "Router"
+  },
+  "Route": {
+    "prefix": "i4-route",
+    "body": [
+      "<IonRoute component=\"$1\" ${2:url=\"$3\"}> $0 </IonRoute>"
+    ],
+    "description": "Route"
+  },
+  "Router Outlet": {
+    "prefix": "i4-router-outlet",
+    "body": [
+      "<IonRouterOutlet name=\"$1\"> $0 </IonRouterOutlet>"
+    ],
+    "description": "Route outlet"
+  },
+  "Searchbar": {
+    "prefix": "i4-searchbar",
+    "body": [
+      "<IonSearchbar ${1:placeholder=\"$2\"} ${3:animated} ${4:showCancelButton} ${5:cancelButtonText=\"$6\"}></IonSearchbar>"
+    ],
+    "description": "Searchbar - other options: debounce type= value="
+  },
+  "Segment": {
+    "prefix": "i4-segment",
+    "body": [
+      "<IonSegment ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonSegment>"
+    ],
+    "description": "Segment"
+  },
+  "Segment Button": {
+    "prefix": "i4-segment-button",
+    "body": [
+      "<IonSegmentButton onIonSelect={() => $1 }>",
+      "\t$0",
+      "</IonSegmentButton>"
+    ],
+    "description": "Segment button - other options: checked value="
+  },
+  "Segment Full": {
+    "prefix": "i4-segment-full",
+    "body": [
+      "<IonSegment onIonChange={e => $1 }>",
+      "\t<IonSegmentButton value=\"$2\">",
+      "$3",
+      "\t</IonSegmentButton>",
+      "\t<IonSegmentButton value=\"$4\">",
+      "$5",
+      "\t</IonSegmentButton>",
+      "</IonSegment>"
+    ],
+    "description": "Segment button - other options: checked value="
+  },
+  "Select": {
+    "prefix": "i4-select",
+    "body": [
+      "<IonSelect placeholder=\"$1\" ${2:interface=\"${3|alert,popover,action-sheet|}\"}>",
+      "\tIonSelectOption[value]*$0",
+      "</IonSelect>"
+    ],
+    "description": "Segment button - other options: multiple okText= cancelText= selectedText="
+  },
+  "Select Option": {
+    "prefix": "i4-select-option",
+    "body": [
+      "<IonSelectOption value=\"$1\"> $2 </IonSelectOption>"
+    ],
+    "description": "Segment button - other options: multiple okText= cancelText= selectedText="
+  },
+  "Show When Mode": {
+    "prefix": "i4-show-when-mode",
+    "body": [
+      "<IonShowWhen mode=\"${1|ios,md|}\"> $0 </IonShowWhen>"
+    ],
+    "description": "Show when mode"
+  },
+  "Show When Media Query": {
+    "prefix": "i4-show-when-media-query",
+    "body": [
+      "<IonShowWhen mediaQuery=\"$1\"> $0 </IonShowWhen>"
+    ],
+    "description": "Show based on media query"
+  },
+  "Show When Orientation": {
+    "prefix": "i4-show-when-orientation",
+    "body": [
+      "<IonShowWhen orientation=\"${1|portrait,landscape|}\"> $0 </IonShowWhen>"
+    ],
+    "description": "Show based onorientation"
+  },
+  "Show When platform": {
+    "prefix": "i4-show-when-platform",
+    "body": [
+      "<IonShowWhen platform=\"${1|android,cordova,ios,ipad,iphone,phablet,tablet,electron,pwa,mobile,desktop,hybrid|}\"> $0 </IonShowWhen>"
+    ],
+    "description": "Show based on platform"
+  },
+  "Show When Size": {
+    "prefix": "i4-show-when-size",
+    "body": [
+      "<IonShowWhen size=\"${1|xs,sm,md,lg,xl|}\"> $0 </IonShowWhen>"
+    ],
+    "description": "Show based on size"
+  },
+  "Skeleton Text": {
+    "prefix": "i4-skeleton-text",
+    "body": [
+      "<IonSkeletonText style={{width:'$1'}}></IonSkeletonText>"
+    ],
+    "description": "Split pane as emmet"
+  },
+  "Skeleton Text Paragraph": {
+    "prefix": "i4-skeleton-text-paragraph",
+    "body": [
+      "<p *ngFor=\"let item of [1,2,3$1]\">",
+      "\t<IonSkeletonText style={{width:'100%'}}></IonSkeletonText>",
+      "\t<IonSkeletonText style={{width:'100%'}}></IonSkeletonText>",
+      "\t<IonSkeletonText style={{width:'80%'}}></IonSkeletonText>",
+      "<p>"
+    ],
+    "description": "Skeleton text with *ngfor"
+  },
+  "Slide": {
+    "prefix": "i4-slide",
+    "body": [
+      "<IonSlide> $1 </IonSlide>"
+    ],
+    "description": "Slide"
+  },
+  "Slides": {
+    "prefix": "i4-slides",
+    "body": [
+      "<IonSlides ${1:pager={true}} ${2:options={slideOpts}}>",
+      "\t<IonSlide>",
+      "\t\t<h1> $3 </h1>",
+      "\t</IonSlide>",
+      "\t<IonSlide>",
+      "\t\t<h1> $4 </h1>",
+      "\t</IonSlide>",
+      "\t<IonSlide>",
+      "\t\t<h1> $5 </h1>",
+      "\t</IonSlide>",
+      "</IonSlides>"
+    ],
+    "description": "Slides - other options: scrollbar"
+  },
+  "Spinner": {
+    "prefix": "i4-spinner",
+    "body": [
+      "<IonSpinner ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"} name=\"${3|lines,lines-small,dots,bubbles,circles,crescent|}\"></IonSpinner>"
+    ],
+    "description": "Spinner - other options: pause duration"
+  },
+  "Split Pane": {
+    "prefix": "i4-split-pane",
+    "body": [
+      "<IonSplitPane ${1:when=\"${2|xs,sm,md,lg,xl|}\"}> $0 </IonSplitPane>"
+    ],
+    "description": "Split Pane"
+  },
+  "Split Pane full": {
+    "prefix": "i4-split-pane-full",
+    "body": [
+      "<IonSplitPane>",
+      " <!--  our side menu  -->",
+      "\t<IonMenu>",
+      "\t\t<IonHeader>",
+      "\t\t\t<IonToolbar>",
+      "\t\t\t\t<IonTitle> Menu </IonTitle>",
+      "\t\t\t</IonToolbar>",
+      "\t\t</IonHeader>",
+      "\t</IonMenu>",
+      "",
+      "\t<!-- the main content -->",
+      "\t<IonRouterOutlet main></IonRouterOutlet>",
+      "</IonSplitPane>"
+    ],
+    "description": "Split Pane Full"
+  },
+  "Tabs": {
+    "prefix": "i4-tabs",
+    "body": [
+      "<IonTabs ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonTabs>"
+    ],
+    "description": "Tabs"
+  },
+  "Tab": {
+    "prefix": "i4-tab",
+    "body": [
+      "<IonTab ${1:label=\"$2\"} ${3:icon=\"${4|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\"} href=\"$5\"> $6 </IonTab>"
+    ],
+    "description": "Tab other options - color= scrollable tabbarHidden tabbarHighlight tabbarLayout tabbarPlacement translucent useRouter"
+  },
+  "Tabs Full": {
+    "prefix": "i4-tabs-full",
+    "body": [
+      "<IonTabs ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}>",
+      "\t<IonTab label=\"$3\" icon=\"${4|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\" href=\"$5\">",
+      "\t\t<IonRouterOutlet stack name=\"$6\"></IonRouterOutlet>",
+      "\t</IonTab>",
+      "\t<IonTab label=\"$7\" icon=\"${8|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\" href=\"$9\">",
+      "\t\t<IonRouterOutlet stack name=\"$10\"></IonRouterOutlet>",
+      "\t</IonTab>",
+      "\t<IonTab label=\"$11\" icon=\"${12|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\" href=\"$13\">",
+      "\t\t<IonRouterOutlet stack name=\"$14\"></IonRouterOutlet>",
+      "\t</IonTab>",
+      "</IonTabs>"
+    ],
+    "description": "Tab full template"
+  },
+  "Text": {
+    "prefix": "i4-text",
+    "body": [
+      "<IonText color=\"${1|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"> $0 </IonText>"
+    ],
+    "description": "Text Item"
+  },
+  "Textarea": {
+    "prefix": "i4-textarea",
+    "body": [
+      "<IonTextarea ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonTextarea>"
+    ],
+    "description": "Text Area"
+  },
+  "Textarea Clear On Edit": {
+    "prefix": "i4-textarea-clear-on-edit",
+    "body": [
+      "<IonTextarea clearOnEdit={true}> $0 </IonTextarea>"
+    ],
+    "description": "Text Area with clear on edit"
+  },
+  "Textarea Auto Grow": {
+    "prefix": "i4-textarea-autogrow",
+    "body": [
+      "<IonTextarea autoGrow={true}> $0 </IonTextarea>"
+    ],
+    "description": "Text Area with clear on edit"
+  },
+  "Textarea Item": {
+    "prefix": "i4-textarea-item",
+    "body": [
+      "<IonItem>",
+      "\t<IonLabel> $0 </IonLabel>",
+      "\t<IonTextarea ${1:placeholder=\"${2:placeholder here...}\"} ${3:autoGrow={true}} ${4:clearOnEdit={true}}> $0 </IonTextarea>",
+      "</IonItem>"
+    ],
+    "description": "Text Area with clear on edit"
+  },
+  "Thumbnail": {
+    "prefix": "i4-thumbnail",
+    "body": [
+      "<IonThumbnail ${1:slot=\"${2|start,end|}\"}></IonThumbnail>"
+    ],
+    "description": "Thumbnail"
+  },
+  "Title": {
+    "prefix": "i4-title",
+    "body": [
+      "<IonTitle> $1 </IonTitle>"
+    ],
+    "description": "title"
+  },
+  "Toggle": {
+    "prefix": "i4-toggle",
+    "body": [
+      "<IonToggle ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}></IonToggle>"
+    ],
+    "description": "toggle"
+  },
+  "Toggle Item": {
+    "prefix": "i4-toggle-item",
+    "body": [
+      "<IonItem>",
+      "\t<IonLabel> $0 </IonLabel>",
+      "\t<IonToggle ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}></IonToggle>",
+      "</IonItem>"
+    ],
+    "description": "toggle"
+  },
+  "Toolbar": {
+    "prefix": "i4-toolbar",
+    "body": [
+      "<IonToolbar ${1:color=\"${1|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}> $0 </IonToolbar>"
+    ],
+    "description": "Toolbar - other options: mode="
+  }
+}

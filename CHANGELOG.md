@@ -1,3 +1,8 @@
+## Change Log 1.3.0
+- Added react support for files of `javascriptreact`, `typescriptreact`,`javascript`,`typescript`
+- Added ion-avatar nested in ion-chip
+- `ion-back-button` is now 2 keywords `i4-button-back` (Which is a simpler implementation) & `i4-button-back-nested`
+
 ## Change Log 1.1.6
 - Added clear on edit to textarea `i4-textarea-clear-on-edit`
 - Added autogrow to textarea `i4-textarea-clear-on-edit`

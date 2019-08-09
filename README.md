@@ -1,17 +1,18 @@
-### Ionic 4 code snippets
+# Ionic 4 code snippets
 
-prefix `i4-` 
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 
-Based off of [ionic 4 component documentation(beta)](https://beta.ionicframework.com/docs/api/select-option)
+## prefix: `i4-`
+**Now with support for react**
 
-Some gotchas when working with the snippets
+[Ionic 4 Documentation](https://ionicframework.com/docs)
 
-#### ~~Removing attributes~~
-~~Most of the snippets give you the option to remove the whole attribute if you do not want it. For example if you. ...~~
+Most elements allow for tabbing into options of a specific element. For example when using the `i4-button-full` you can tab into (or just remove) the options
 
-This issue has been fixed: https://github.com/Microsoft/vscode/issues/31619
+![snippet](snippet-01.gif)
 
-![snippet](snippet.gif)
 
 | Shortcut Code | Component | Options |
 | ------------- | --------- | --------|
