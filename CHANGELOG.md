@@ -1,4 +1,4 @@
-## Change Log 1.3.0
+## Change Log 1.4.0
 - Added react support for files of `javascriptreact`, `typescriptreact`,`javascript`,`typescript`
 - Added ion-avatar nested in ion-chip
 - `ion-back-button` is now 2 keywords `i4-button-back` (Which is a simpler implementation) & `i4-button-back-nested`
