@@ -155,13 +155,13 @@
     "prefix": "i4-card",
     "body": [
       "<IonCard ${1:color=\"${2|primary,secondary,tertiary,success,warning,danger,light,medium,dark|}\"}>",
-      "\t<IonCard-header>",
-      "\t\t${3:<IonCard-subtitle>$4</IonCard-subtitle>}",
-      "\t\t${5:<IonCard-title>$6</IonCard-title>}",
-      "\t</IonCard-header>",
-      "\t<IonCard-content>",
+      "\t<IonCardHeader>",
+      "\t\t${3:<IonCardSubtitle>$4</IonCardSubtitle>}",
+      "\t\t${5:<IonCardTitle>$6</IonCardTitle>}",
+      "\t</IonCardHeader>",
+      "\t<IonCardContent>",
       "\t\t$0",
-      "\t</IonCard-content>",
+      "\t</IonCardContent>",
       "</IonCard>"
     ],
     "description": "Card other options: mode="
